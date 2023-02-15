@@ -1,0 +1,16 @@
+{
+    "nav": {
+        "home": "Home",
+        "singleMenuItem": "Single menu item",
+        "collapseMenu": {
+            "collapseMenu": "Collapse menu item",
+            "item1": "Collapse menu item 1",
+            "item2": "Collapse menu item 2"
+        },
+        "productManagement": {
+            "groupMenu": "Product Managenent",
+            "products": "All Products",
+            "category": "Categories"
+        }
+    }
+}
