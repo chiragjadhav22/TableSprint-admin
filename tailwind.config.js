@@ -63,7 +63,14 @@ module.exports = {
             color: theme('colors.gray.400'),
           },
         },
-      })
+      }),
+      colors: {
+        'purple-light':'#F9F1FE',
+        'grey-light':'#F2F2F2',
+        'grey-medium':'#F2F2F2',
+        'purple-medium':'#C487EC',
+        'white':'#FFFFFF'
+      }
     },
   },
   plugins: [

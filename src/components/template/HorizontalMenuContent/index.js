@@ -12,7 +12,7 @@ const HorizontalMenuContent = ({manuVariant, userAuthority = []}) => {
 	const { t } = useTranslation()
 
 	return (
-		<span className="flex items-center">
+		<span className="flex items-start">
 			{navigationConfig.map(nav => {
 				if(nav.type === NAV_ITEM_TYPE_TITLE || nav.type === NAV_ITEM_TYPE_COLLAPSE) {
 					return (

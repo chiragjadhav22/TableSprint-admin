@@ -19,7 +19,25 @@ function useAuth() {
 
     const signIn = async ({ email, password }) => {
         try {
-			const resp = await apiSignIn({ email, password })
+			//const resp = await apiSignIn({ email, password })
+			let resp = {data:{result:{}}}
+            // const resp = await apiSignIn({ email, password })
+            resp.data.result = {
+                "token": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6MzUsImlhdCI6MTY3NjI5MjY3MSwiZXhwIjoxNjc2Mzc5MDcxfQ.zxpFRcVBCQB_wLjleIsNFOVckEjscHzW4yDPHsSV344",
+                "user": [
+                    {
+                        "id": 35,
+                        "role_id": 1,
+                        "email": "admin@gmail.com",
+                        "username": "admin",
+                        "status": 1,
+                        "avatar": "/img/avatars/thumb-1.jpg",
+                        "authority": [
+                            "user"
+                        ]
+                    }
+                ]
+            }
 			if (resp.data.result) {
 				const { token } = resp.data.result
 				dispatch(onSignInSuccess(token))

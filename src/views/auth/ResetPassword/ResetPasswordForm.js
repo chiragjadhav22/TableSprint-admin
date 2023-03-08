@@ -132,6 +132,7 @@ const ResetPasswordForm = props => {
 								</ActionLink>
 							</div>
 						</FormContainer>
+						
 					</Form>
 				)}
 			</Formik>

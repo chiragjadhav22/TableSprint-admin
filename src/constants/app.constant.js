@@ -1,3 +1,3 @@
-export const APP_NAME = 'Biofuel'
+export const APP_NAME = 'Digital Flake'
 export const PERSIST_STORE_NAME = 'admin'
 export const REDIRECT_URL_KEY = 'redirectUrl'

@@ -1,4 +1,4 @@
-import React, { useEffect } from 'react'
+  import React, { useEffect } from 'react'
 import { Loading, DoubleSidedImage } from 'components/shared'
 import { toast, Notification } from 'components/ui'
 import { useDispatch, useSelector } from 'react-redux'

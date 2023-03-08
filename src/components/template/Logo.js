@@ -39,7 +39,7 @@ const Logo = props => {
 Logo.defaultProps = {
 	mode: 'light',
 	type: 'full',
-	logoWidth: 'auto'
+	logoWidth: '45%'
 }
 
 Logo.propTypes = {

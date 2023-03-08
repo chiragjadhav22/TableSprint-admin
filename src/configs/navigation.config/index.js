@@ -5,9 +5,9 @@ import {
 
 const navigationConfig = [
 	{
-		key: 'Biofuel',
+		key: 'My Folder',
 		path: '',
-		title: '',
+		title: 'My Folder',
 		translateKey: '',
 		icon: '',
 		type: NAV_ITEM_TYPE_TITLE,
@@ -54,7 +54,51 @@ const navigationConfig = [
 				}
 			]
 		}]
-    }
+    },
+	{
+		key: 'My Worksheet',
+		path: '/worksheet',
+		title: 'My Worksheet',
+		translateKey: '',
+		icon: '',
+		type: NAV_ITEM_TYPE_TITLE,
+		authority: [],
+		subMenu: [
+			{
+				key: 'addNewWorksheet',
+				path: '/workSheet',
+				title: 'Add new worksheet',
+				translateKey: 'nav.addNewWorksheet',
+				icon: '',
+				type: NAV_ITEM_TYPE_ITEM,
+				authority: [],
+				subMenu: []
+			},
+			{
+				key: 'viewWorksheet',
+				path: '/viewWorksheet',
+				title: 'View Worksheet',
+				translateKey: 'nav.viewWorksheet',
+				icon: '',
+				type: NAV_ITEM_TYPE_ITEM,
+				authority: [],
+				subMenu: []
+			},
+		]
+			
+	},
+	{
+		key: 'My Templates',
+		path: '',
+		title: 'My Templates',
+		translateKey: '',
+		icon: '',
+		type: NAV_ITEM_TYPE_TITLE,
+		authority: [],
+		subMenu: [
+			
+			]
+	}
 
 ]
 
