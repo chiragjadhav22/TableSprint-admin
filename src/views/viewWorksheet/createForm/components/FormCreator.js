@@ -12,6 +12,7 @@ export default function FormCreator(props) {
     const { name, type, values, setFieldValue } = props;
     const dispatch = useDispatch();
 
+
     const typeOptions = [
         { value: 'text', label: 'Text' },
         { value: 'date', label: 'Date' },
@@ -54,6 +55,8 @@ export default function FormCreator(props) {
         dispatch(updateInputArr(newArr));
     }
 
+    
+
     //
 
     function handleCreate(values) {
@@ -64,6 +67,7 @@ export default function FormCreator(props) {
 
         newArrObj.type = values[`${type}`];
         newArrObj.inputName = values[`${name}`];
+        
         // console.log(newArrObj.loadForm);
         newArr[index] = newArrObj;
         dispatch(updateFormData(newArr));
@@ -127,10 +131,10 @@ export default function FormCreator(props) {
                         </FormItem>
                     </div>
                     <div className="col-span-4">
-                        <InputOptions type={values[type]} />
+                        <InputOptions name={name} type={values[type]} />
                     </div>
                     <div className="col-start-4 col-end-4">
-                        <Button onClick={() => { handleCreate(values) }}>
+                        <Button type='button' onClick={() => { handleCreate(values) }}>
                             Create
                         </Button>
                     </div>

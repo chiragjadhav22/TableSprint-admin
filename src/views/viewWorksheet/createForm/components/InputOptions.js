@@ -1,13 +1,17 @@
-import Options  from './subComponents/Options'
+import Options from './subComponents/Options'
 
 export default function InputOptions(props) {
 
-    const {type} = props;
+    const { type,name } = props;
+ 
 
-    return(
+    
+
+
+    return (
         <>
-       
-        {type === 'radio' || type === 'select' || type === 'checkbox' ? <Options type={type} /> :  <h6> {type} </h6>}
+
+            {type === 'radio' || type === 'select' || type === 'checkbox' ? <Options name={name} type={type} /> : <h6> {type} </h6>}
         </>
     )
 

@@ -9,7 +9,7 @@
     "@fullcalendar/interaction": "^5.10.1",
     "@fullcalendar/react": "^5.10.1",
     "@fullcalendar/timegrid": "^5.10.1",
-    "@inovua/reactdatagrid-community": "^5.8.4",
+    "@inovua/reactdatagrid-community": "^5.8.5",
     "@material-ui/utils": "^4.11.3",
     "@mui/icons-material": "^5.11.9",
     "@mui/material": "^5.11.9",

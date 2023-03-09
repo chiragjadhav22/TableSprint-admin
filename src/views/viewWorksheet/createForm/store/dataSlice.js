@@ -19,7 +19,8 @@ import { getAllWorksheet } from 'services/workSheetService';
 const formDataInit = [{
     name:'name_0',
     inputName: 'Name',
-    type: 'text'
+    type: 'text',
+    store:[]
 
 }];
 

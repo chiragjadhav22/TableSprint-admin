@@ -156,6 +156,7 @@ export default function LinkForm() {
                 enableReinitialize={true}
                 onSubmit={(values) => {
                     //console.log(values);
+                    alert(JSON.stringify(formData));
                 }
                 }
             >{({ values, touched, errors, isSubmitting, setFieldValue }) => (
@@ -180,8 +181,11 @@ export default function LinkForm() {
                             )
 
                         })}
-                        <Button className='mt-10' onClick={ () => {addInputFields(values)} }>
+                        <Button className='mt-10' type='button' onClick={ () => {addInputFields(values)} }>
                             Add fields
+                        </Button>
+                        <Button className='mt-10' type='submit'>
+                            Submit
                         </Button>
 
                     </div>
